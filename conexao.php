@@ -12,9 +12,10 @@ $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $pass,
 //  if(isset($pdo)){
 // echo 'existe👍';
 //  }
-
-//  $sql = "CREATE TABLE tb_teste(
-//  id_teste int not null AUTO_INCREMENT primary key,
+// $i = 0;
+// while($i < 5){
+//  $sql = "CREATE TABLE tb_minha(
+//  id_minha int not null AUTO_INCREMENT primary key,
 //  nome varchar(55) not null,
 //  email varchar(55) not null,
 //  idade date not null
@@ -27,4 +28,5 @@ $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $pass,
 //     exit;
 // }else{
 //     echo 'foi naum';
+// }
 // }
