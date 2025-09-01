@@ -3,9 +3,6 @@ require 'conexao.php';
 
 
 
-require 'conexao.php';
-
-
 if(isset($_POST['nome'], $_POST['email'], $_POST['nascimento'], $_POST['senha'])){
 
     $nome = $_POST['nome'];
@@ -44,6 +41,8 @@ function lista(){
 </head>
 <body>
     <a href="livros.php">Livros</a>
+
+    <a href="index.php"><button>Sair</button></a>
 
 <form method="POST">
     <div id="alinhamento1">
@@ -96,8 +95,8 @@ function lista(){
           echo "<td>" .($lista['email']) . "</td>";
           echo "<td>" .($lista['senha']) . "</td>";
           echo "<td>" .($lista['nascimento']) . "</td>";
-          echo "<td>" . "<a href='../alterar_dash.php?id_teste=" .  $lista['id_teste'] . "'><button>ALTERAR</button></a>" . "</td>";
-          echo "<td>" . "<a href='../deletar_dash.php?id_teste=" .  $lista['id_teste'] . "'><button>DELETAR</button></a>" . "</td>";
+          echo "<td>" . "<a href='alterar_dash.php?id_teste=" .  $lista['id_teste'] . "'><button>ALTERAR</button></a>" . "</td>";
+          echo "<td>" . "<a href='deletar_dash.php?id_teste=" .  $lista['id_teste'] . "'><button>DELETAR</button></a>" . "</td>";
           
           echo "</tr>";
         }
